@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Обойке 3000</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+<header>
+	<img src="images/logo.png">
+	<button id="count_button">Рассчитать количество обоев</button>
+</header>
+
+<div class="content">
+<div class="wrapper">
+		<h1>Интернет-магазин обоев - Котои</h1>
+
+	<div class="slider" id="portfolio">
+		<div class="fotorama" data-loop="true">
+			  <img src="images/cats-oboi.jpg">
+			  <img src="images/cats-oboi-2.jpg">
+			  <img src="images/cats-oboi-3.jpg">
+		</div>
+	</div>
+		<p>Экологически чистые обои из <a href="https://en.wikipedia.org/wiki/Nonwoven_fabric" title="ссылка на Википедию" target="blank" id="link">*флизелина</a></p>
+		<span id="show_link"></span>
+		
+</div>
+
+	
+
+	<form>
+			<p id="p">*Оставьте заявку и наши специалисты поклеят обои за Вас</p>
+			<span id="show_p"></span><br>
+			<input type="text" placeholder="*Введите имя" id="input">
+			<input type="tel" name="user_phone" placeholder="Введите телефон" id="input2">
+			<button type="button">Отправить</button><br>
+			<span id="show_input"></span>
+			<img src="images/professional.jpg" id="cats" alt="котики профессионально делают ремонт">
+			<span id="show_cats"></span>
+	</form>
+
+
+</div>
+
+
+<div class="form hide-form">
+
+	<div>Ширина обоев</div>
+	<select id="wallpaper_width">
+		<option value="0.53">0.53</option>
+		<option value="0.7">0.7</option>
+		<option value="1.06">1.06</option>		
+	</select>
+
+	<div>Длина обоев</div>
+	<select id="wallpaper_length">
+		<option value="10.05">10.05</option>
+		<option value="15">15</option>		
+	</select>
+
+		<div>Высота комнаты</div>
+			<input type="text" id="room_height">
+		<div>Периметр комнаты</div>
+			<input type="text" id="room_perimetr">
+		<div>Высота окна</div>
+			<input type="text" id="window_height">
+		<div>Ширина окна</div>
+			<input type="text" id="window_width">
+		<div>Высота двери</div>
+			<input type="text" id="door_height">
+		<div>Ширина двери</div>
+			<input type="text" id="door_width"><br>
+
+	<button id="count">Рассчитать</button>
+	<p class="result"></p>
+</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<script type="text/javascript" src="hw-6.js"></script>
+</body>
+</html>
